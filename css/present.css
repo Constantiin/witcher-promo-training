@@ -75,3 +75,21 @@
 .present__btn:focus::after {
     filter:  brightness(1.2);
 }
+
+@media (min-height: 850px) {
+
+    .present {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .present__container {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+}
