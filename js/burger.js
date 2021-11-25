@@ -1,7 +1,7 @@
 const burgerMenu = (obj) => {
     const {
         selectorBurger = '.burger',
-        burgerActive = 'burgerActive',
+        burgerActive = 'burger_active',
         selectorMenu,
         menuActive
     } = obj
