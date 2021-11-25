@@ -4,7 +4,6 @@
     --color: #fff;
     --size: 2px;
     position: relative;
-    display: block;
     width: var(--width);
     height: var(--height);
     background-color: transparent;
