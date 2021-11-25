@@ -1,4 +1,11 @@
-const burgerMenu = (selectorBurger, selectorMenu, burgerActive, menuActive) => {
+const burgerMenu = (obj) => {
+    const {
+        selectorBurger = '.burger',
+        burgerActive = 'burgerActive',
+        selectorMenu,
+        menuActive
+    } = obj
+    
     const burger = document.querySelector(selectorBurger);
     const menu = document.querySelector(selectorMenu);
 
