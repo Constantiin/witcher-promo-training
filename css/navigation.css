@@ -41,11 +41,24 @@
 }
 
 @media (max-width: 650px) {
+    .navigation {
+        position: relative;
+    }
+
     .navigation__list {
+        position: absolute;
         display: none;
+        flex-direction: column;
+        top: 30px;
+        right: 0;
+        gap: 10px;
     }
 
     .navigation__btn {
         display: block;
+    }
+
+    .navigation__list_active {
+        display: flex;
     }
 }
