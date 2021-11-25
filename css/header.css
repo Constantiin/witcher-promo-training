@@ -10,10 +10,17 @@
 
 .header__announcment {
     justify-self: center;
+    font-size: 20px;
 }
 
 .header__navigation {
     justify-self: end;
+}
+
+@media (max-width: 1000px) {
+    .header__announcment {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -23,5 +30,11 @@
 
     .header__container {
         grid-template-columns: 45px 1fr 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__announcment {
+        font-size: 12px;
     }
 }
