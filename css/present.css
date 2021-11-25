@@ -10,6 +10,7 @@
 }
 
 .present__subtitle {
+    max-width: 350px;
     font-size: 20px;
     line-height: 130%;
     margin-top: 8px;
@@ -37,6 +38,7 @@
     border-radius: 2px;
     filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51));
     transition: filter .3s ease-in-out;
+    outline: none;
 }
 
 .present__btn::after {
@@ -49,9 +51,27 @@
     background-image: url('../img/text-button.png');
     background-repeat: no-repeat;
     background-position: center;
+    outline: none;
 }
 
 .present__btn:hover::before {
     filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51))
         brightness(1.2);
+}
+
+.present__btn:active::before {
+    filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51))
+        brightness(1.3);
+}
+.present__btn:active::after {
+    filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51))
+        brightness(1.3);
+}
+
+.present__btn:focus::before {
+    filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51)) brightness(1.2);
+}
+
+.present__btn:focus::after {
+    filter:  brightness(1.2);
 }
