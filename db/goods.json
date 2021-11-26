@@ -1,0 +1,32 @@
+[
+  {
+  "picture": "img/hoody.jpg",
+  "name": "Детская толстовка 3D",
+  "price": 1999
+  },
+  {
+    "picture": "img/pendant.jpg",
+    "name": "Медальон Школы Волка",
+    "price": 999
+    },
+  {
+    "picture": "img/pendent.jpg",
+    "name": "Кулон Волк",
+    "price": 1999
+    },
+  {
+  "picture": "img/puzzle.jpg",
+  "name": "Подарочный набор Ведьмак",
+  "price": 2999
+  },
+  {
+  "picture": "img/baseball.jpg",
+  "name": "Кепка The Witcher Eredin",
+  "price": 2499
+  },
+  {
+    "picture": "img/mask.jpg",
+    "name": "Маска защитная",
+    "price": 390
+  }
+]

@@ -1,9 +1,10 @@
-const tabs = (obj) => {
+const switchTabs = (obj) => {
     const {
         selectorTabsButtons,
         activeClassButton,
         selectorTabsItem,
         activeClassItem,
+        callback = () => {},
     } = obj;
 
     const tabsButtons = document.querySelectorAll(selectorTabsButtons);
@@ -15,6 +16,7 @@ const tabs = (obj) => {
                 if (tabsButtons[i] === btn) {
                     tabsButtons[i].classList.add(activeClassButton);
                     tabsItems[i].classList.add(activeClassItem);
+                    callback(i);
                 } else {
                     tabsButtons[i].classList.remove(activeClassButton);
                     tabsItems[i].classList.remove(activeClassItem);
@@ -25,4 +27,4 @@ const tabs = (obj) => {
 
 };
 
-export default tabs;
+export default switchTabs;
