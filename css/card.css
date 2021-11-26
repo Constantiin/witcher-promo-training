@@ -1,3 +1,7 @@
+.card {
+    max-width: 281px;
+}
+
 .card_video {
     flex-basis: 285px;
 }
@@ -25,7 +29,7 @@
 }
 
 .card__product {
-    flex-basis: 285px;
+    flex-basis: 200px;
 }
 
 @media (max-width: 1000px) {
