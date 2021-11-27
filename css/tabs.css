@@ -41,6 +41,34 @@
     display: block;
 }
 
+.tabs__arrow {
+    position: absolute;
+    top: 30%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .7);
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    border-radius: 25%;
+    z-index: 5;
+}
+
+.tabs__arrow_left {
+    left: 0;
+}
+
+.tabs__arrow_right {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.tabs__arrow_disable {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
 @media (max-width: 1000px) {
     .tabs__control {
         padding: 16px 38px;
@@ -92,5 +120,10 @@
         max-width: 220px;
         padding: 10px 30px;
         margin: 0 auto;
+    }
+
+    .tabs__arrow {
+        width: 35px;
+        height: 35px;
     }
 }

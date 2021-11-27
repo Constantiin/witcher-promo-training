@@ -11,6 +11,11 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    navigation: {
+      nextEl: ".tabs__arrow_right",
+      prevEl: ".tabs__arrow_left",
+      disabledClass: "tabs__arrow_disable"
+    },
     breakpoints: {
         // when window width is >= 320px
         320: {
