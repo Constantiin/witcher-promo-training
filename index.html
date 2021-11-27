@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/index.css">
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js" type="module"></script>
 </head>
 <body class="page">
@@ -72,22 +73,28 @@
                 </ul>
 
                 <ul class="tabs__list">
-                    <li class="tabs__item tabs__item_active">
-                        <ul class="tabs__content tabs__content_video" data-dbase="video">
+                    <li class="tabs__item swiper tabs__item_active">
+                        <ul class="tabs__content tabs__content_video swiper-wrapper" data-dbase="video">
                             
                         </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </li>
 
-                    <li class="tabs__item">
-                        <ul class="tabs__content tabs__content_photo" data-dbase="photo">
-                            
+                    <li class="tabs__item swiper">
+                        <ul class="tabs__content tabs__content_photo swiper-wrapper" data-dbase="photo">
+
                         </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </li>
 
-                    <li class="tabs__item">
-                        <ul class="tabs__content tabs__content_product" data-dbase="goods">
+                    <li class="tabs__item swiper">
+                        <ul class="tabs__content tabs__content_product swiper-wrapper" data-dbase="goods">
                             
                         </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </li>
                 </ul>
             </div>

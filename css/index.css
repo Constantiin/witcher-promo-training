@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import 'swiper-bundle.min.css';
 @import 'fonts.css';
 @import 'default.css';
 @import 'header.css';
@@ -6,5 +7,6 @@
 @import 'burger.css';
 @import 'present.css';
 @import 'tabs.css';
-@import 'card.css';
+/* включить при отсутствии слайдера */
+/* @import 'card.css'; */
 @import 'product.css';

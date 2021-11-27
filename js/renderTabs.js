@@ -6,9 +6,9 @@ const getCard = function(dataCard) {
 
     switch (this) {
         case 'video':
-            li.classList.add('.card_video');
+            li.classList.add('card_video', 'swiper-slide');
             li.innerHTML = `
-                <a class="card__link" href="${dataCard.link}" aria-label="Русский трейлер #1">
+                <a class="card__link" href="${dataCard.link}" aria-label="${dataCard.description}">
                     <figure>
                         <img class="card__video-img" src="${dataCard.preview}" alt="${dataCard.description}">
                         <figcaption class="card__video-img-text">${dataCard.description}</figcaption>
@@ -18,14 +18,14 @@ const getCard = function(dataCard) {
         break;
 
         case 'photo':
-            li.classList.add('.card_img');
+            li.classList.add('card_img', 'swiper-slide');
             li.innerHTML = `
                 <img class="card__photo-img" src="${dataCard.link}" alt="${dataCard.description}">
             `;
         break;
 
         case 'goods':
-            li.classList.add('.card_product');
+            li.classList.add('card_product', 'swiper-slide');
             li.innerHTML = `
                 <article class="product">
                     <img class="product__img" src="${dataCard.picture}" alt="${dataCard.name}">

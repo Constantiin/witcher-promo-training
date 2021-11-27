@@ -80,6 +80,3 @@
         height: calc((100vw - 30px) / 5 * 4);
     }
 }
-
-@media (max-width: 320px) {
-}    
