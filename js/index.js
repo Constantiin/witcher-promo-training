@@ -1,6 +1,8 @@
+import renderTabs from "./renderTabs.js";
 import burgerMenu from "./burger.js";
 import switchTabs from "./tabs.js";
-import renderTabs from "./renderTabs.js";
+
+renderTabs();
 
 burgerMenu({
     selectorMenu: '.navigation__list',
@@ -14,5 +16,3 @@ switchTabs({
     activeClassItem: 'tabs__item_active',
     callback: renderTabs,
 });
-
-renderTabs(); // проверить надо ли
