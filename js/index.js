@@ -5,7 +5,7 @@ import switchTabs from "./tabs.js";
 renderTabs();
 
 const swiper = new Swiper('.swiper', {
-    spaceBetween: 30,
+    slidesPerView: 4,
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -15,14 +15,17 @@ const swiper = new Swiper('.swiper', {
         // when window width is >= 320px
         320: {
           slidesPerView: 1,
+          spaceBetween: 0,
         },
         // when window width is >= 425px
-        425: {
+        768: {
             slidesPerView: 2,
+            spaceBetween: 30,
           },
         // when window width is >= 850px
         850: {
           slidesPerView: 4,
+          spaceBetween: 30,
         }
       }
 });

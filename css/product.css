@@ -55,9 +55,9 @@
 }
 
 @media (max-width: 850px) {
-    .product__img {
+    /* .product__img {
         height: 180px;
-    }
+    } */
 
     .product__wrapper-buy {
         padding-right: 35px;
