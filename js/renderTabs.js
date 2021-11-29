@@ -8,7 +8,7 @@ const getCard = function(dataCard) {
         case 'video':
             li.classList.add('card_video', 'swiper-slide');
             li.innerHTML = `
-                <a class="card__link" href="${dataCard.link}" aria-label="${dataCard.description}">
+                <a class="card__link tube" href="${dataCard.link}" aria-label="${dataCard.description}">
                     <figure>
                         <img class="card__video-img" src="${dataCard.preview}" alt="${dataCard.description}">
                         <figcaption class="card__video-img-text">${dataCard.description}</figcaption>
