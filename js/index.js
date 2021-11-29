@@ -1,7 +1,7 @@
 import renderTabs from "./renderTabs.js";
 import burgerMenu from "./burger.js";
 import switchTabs from "./tabs.js";
-import "./videotube.js";
+import "./videotube.min.js";
 
 renderTabs();
 
