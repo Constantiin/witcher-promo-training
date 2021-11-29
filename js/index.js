@@ -1,17 +1,13 @@
 import renderTabs from "./renderTabs.js";
 import burgerMenu from "./burger.js";
 import switchTabs from "./tabs.js";
-import "./videotube.min.js";
+import "./videotube.js";
 
 renderTabs();
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     navigation: {
       nextEl: ".tabs__arrow_right",
       prevEl: ".tabs__arrow_left",
@@ -23,7 +19,7 @@ const swiper = new Swiper('.swiper', {
           slidesPerView: 1,
           spaceBetween: 0,
         },
-        // when window width is >= 425px
+        // when window width is >= 768px
         768: {
             slidesPerView: 2,
             spaceBetween: 30,
